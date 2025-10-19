@@ -1,0 +1,138 @@
+/* Body et reset */
+body {
+  display: none;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: url('images/wp01.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+}
+
+/* Sections : tuile à gauche, texte à droite */
+.theme-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.25); /* semi-transparent pour laisser passer l'image */
+  backdrop-filter: blur(12px); /* frosted glass */
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+.theme-section:nth-child(1) { animation-delay: 0.2s; }
+.theme-section:nth-child(2) { animation-delay: 0.4s; }
+
+.theme-section i {
+  font-size: 4em;
+  color: #fff; /* icône blanche pour contraste */
+  flex: 0 0 120px;
+  margin-right: 30px;
+}
+
+.section-content {
+  flex: 1;
+  text-align: left;
+}
+
+.section-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.section-content p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: rgba(102,102,102,0.8);
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(68,68,68,0.9);
+  transform: scale(1.05);
+}
+
+.top-link {
+  display: block;
+  margin-top: 20px;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.top-link:hover {
+  color: #fff;
+}
+
+/* Fade-in simple */
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 50px 0 30px 0;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media(max-width:800px){
+  .theme-section
+

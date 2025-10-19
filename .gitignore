@@ -1,0 +1,7 @@
+.Rhistory
+.RData
+.Rproj.user/
+.quarto/
+_site/
+.DS_Store
+.netlify/
